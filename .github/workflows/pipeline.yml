@@ -92,6 +92,4 @@ jobs:
     - shell: bash
       run: |
         echo argument count is ${{ steps.report-count.outputs.arg-count }}  
-        
-          
-          ./test-script.sh ${{ needs.build.outputs.artifact-path }} ${{ github.event.inputs.myValues }}
+        ./test-script.sh ${{ needs.build.outputs.artifact-path }} ${{ github.event.inputs.myValues }}
